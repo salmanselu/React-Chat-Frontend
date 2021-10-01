@@ -15,7 +15,7 @@ let sendMessage = () => {
 }
 
 setInterval(() => {
-  fetch(`${baseUrl}`).then(response =>{return response.json()}).then(data=>console.log(data));
+  fetch(`${baseUrl}`).then(response =>{return response.json()}).then(data=>setMessageList(data.message));
 }, 1000);
 
   return (
@@ -25,7 +25,7 @@ setInterval(() => {
         <button onClick={sendMessage} className="send-button">send</button>
       </div>
       <div className="response-box">
-        {messageList.map(message=>{return <div>{message}</div>})}
+        {messageList.map(message=>{return <div><hr/>{message}<hr/></div>})}
       </div>
     </div>
   );
