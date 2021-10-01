@@ -19,11 +19,12 @@ setInterval(() => {
 }, 1000);
 
   return (
-    <div className="App">
-      <div className="send-box">
+    <div className="App" onSubmit={sendMessage}>
+      <div className="topspace"></div>
+      <form className="send-box">
         <input onChange={ textChange } type="text" className="message-input" />
-        <input onClick={sendMessage} className="send-button" type="submit"/>
-      </div>
+        <input  className="send-button" type="submit"/>
+      </form>
       <div className="response-box">
         {messageList.map(message=>{return <div className="texts">{message}</div>})}
       </div>
