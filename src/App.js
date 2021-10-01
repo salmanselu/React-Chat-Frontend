@@ -9,7 +9,8 @@ function App() {
 let textChange = (event) => {
   setMessageText(event.target.value);
 }
-let sendMessage = () => {
+let sendMessage = (event) => {
+  event.preventDefault();
   fetch(`${baseUrl}${messageText}`).then((response)=>{return response.json()}).then(data=>setMessageList(data.message))
   setMessageText("");
 }
