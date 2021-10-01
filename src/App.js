@@ -10,7 +10,7 @@ let textChange = (event) => {
   setMessageText(event.target.value);
 }
 let sendMessage = (event) => {
-  event.preventDefault();
+  // event.preventDefault();
   fetch(`${baseUrl}${messageText}`).then((response)=>{return response.json()}).then(data=>setMessageList(data.message))
   setMessageText("");
 }
