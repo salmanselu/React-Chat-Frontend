@@ -22,10 +22,10 @@ setInterval(() => {
     <div className="App">
       <div className="send-box">
         <input onChange={ textChange } type="text" className="message-input" />
-        <button onClick={sendMessage} className="send-button">send</button>
+        <input onClick={sendMessage} className="send-button" type="submit"/>
       </div>
       <div className="response-box">
-        {messageList.map(message=>{return <div><hr/>{message}<hr/></div>})}
+        {messageList.map(message=>{return <div className="texts">{message}</div>})}
       </div>
     </div>
   );

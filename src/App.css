@@ -1,7 +1,9 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: aqua;
+    background-color: #6F6F6F;
+    font-size: larger;
+    font-weight: 500;
 }
 .App{
 
@@ -9,5 +11,30 @@ body{
     margin-left: auto;
     margin-right: auto;
     width: 50vw;
-    background-color: rgb(192, 192, 192);
+
+}
+
+.send-box{
+    display: flex;
+    width: inherit;
+    position: fixed;
+}
+
+.message-input{
+    width: 40vw;
+    height: 5vh;
+}
+
+.send-button{
+    background-color: #28CA00;
+}
+.response-box{
+    background-color: #B1B1B1;
+    margin-top: 10vh;
+}
+
+.texts{
+    margin-top: 1vh;
+    padding: 2vh 2vw;
+    background-color: #C4C4C4;
 }
