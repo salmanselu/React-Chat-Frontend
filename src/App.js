@@ -19,9 +19,9 @@ setInterval(() => {
 }, 1000);
 
   return (
-    <div className="App" onSubmit={sendMessage}>
+    <div className="App">
       <div className="topspace"></div>
-      <form className="send-box">
+      <form className="send-box" onSubmit={sendMessage}>
         <input onChange={ textChange } type="text" className="message-input" />
         <input  className="send-button" type="submit"/>
       </form>
