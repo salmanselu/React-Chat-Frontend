@@ -3,6 +3,7 @@ import './App.css';
 
 function App() {
   //let [count, setCount] = useState(0);
+
   let [messageText, setMessageText] = useState("");
   let [messageList, setMessageList] = useState([]);
   let baseUrl = "https://pethu-chat.herokuapp.com?message=";
@@ -21,15 +22,19 @@ setInterval(() => {
 
   return (
     <div className="App">
-      <div className="topspace"></div>
+      
+      <div className="topspace">
       <form className="send-box" onSubmit={sendMessage}>
         <input onChange={ textChange } type="text" className="message-input" />
         <input  className="send-button" type="submit"/>
       </form>
+      </div>
       <div className="response-box">
         {messageList.map(message=>{return <div className="texts">{message}</div>})}
       </div>
+      
     </div>
+
   );
 }
 
