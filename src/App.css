@@ -45,3 +45,12 @@ body{
     padding: 2vh 2vw;
     background-color: #C4C4C4;
 }
+
+.username{
+    width: fit-content;
+    color:chartreuse;
+    background-color: black;
+    padding: 0.5rem;
+    border-radius: 20vw;
+    font-weight: 200;
+}
