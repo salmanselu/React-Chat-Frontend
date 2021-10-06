@@ -24,7 +24,7 @@ let usernameSetting = () => {
 
 setInterval(() => {
   fetch(`${baseUrl}`).then(response =>{return response.json()}).then(data=>setMessageList(data));
-}, 1000);
+}, 2000);
 
   return (
     <div className="App">
